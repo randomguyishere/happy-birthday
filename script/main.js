@@ -36,7 +36,7 @@ const animationTimeline = () => {
       opacity: 0,
       y: 10
     })
-    .from(".two", 0.4, {
+    .from(".two", 0.7, {
       opacity: 0,
       y: 10
     })
@@ -47,7 +47,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10
       },
-      "+=2.5"
+      "+=3.8"
     )
     .to(
       ".two",
@@ -70,9 +70,9 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10
       },
-      "+=2"
+      "+=3"
     )
-    .from(".four", 0.7, {
+    .from(".four", 0.3, {
       scale: 0.2,
       opacity: 0
     })
@@ -82,14 +82,14 @@ const animationTimeline = () => {
     })
     .staggerTo(
       ".hbd-chatbox span",
-      0.5,
+      0.3,
       {
         visibility: "visible"
       },
       0.05
     )
-    .to(".fake-btn", 0.1, {
-      backgroundColor: "rgb(127, 206, 248)"
+    .to(".fake-btn", 0.5, {
+      backgroundColor: "grey"
     })
     .to(
       ".four",
@@ -102,9 +102,9 @@ const animationTimeline = () => {
       "+=0.7"
     )
     .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.8")
+    .from(".idea-2", 0, ideaTextTrans)
+    .to(".idea-2", 0, ideaTextTransLeave, "+=0")
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
       scale: 1.2,
@@ -114,7 +114,7 @@ const animationTimeline = () => {
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-4", 0.7, ideaTextTransLeave, "+=1")
     .from(
       ".idea-5",
       0.7,
@@ -132,7 +132,7 @@ const animationTimeline = () => {
       ".idea-5 span",
       0.7,
       {
-        rotation: 90,
+        rotation: -90,
         x: 8
       },
       "+=0.4"
@@ -261,13 +261,13 @@ const animationTimeline = () => {
       ".last-smile",
       0.5,
       {
-        rotation: 90
+        rotation: -90
       },
       "+=1"
     );
 
   // tl.seek("currentStep");
-  // tl.timeScale(2);
+  // tl.timeScale(3.5);
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
